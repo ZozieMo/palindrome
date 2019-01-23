@@ -50,5 +50,15 @@ namespace WinPalindrome
                 }
             }
         }
+
+        private void BtnSort_Click(object sender, EventArgs e)
+        {
+            IEnumerable<string> items = new List<string>(LstPalindrome.Items.Cast<string>().Reverse());
+            LstPalindrome.Items.Clear();
+            foreach (string item in items)
+            {
+                LstPalindrome.Items.Add(item);
+            }
+        }
     }
 }

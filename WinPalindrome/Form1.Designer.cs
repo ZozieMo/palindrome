@@ -33,6 +33,7 @@
             this.LstPalindrome = new System.Windows.Forms.ListBox();
             this.LstNotPalindrome = new System.Windows.Forms.ListBox();
             this.BtnFilter = new System.Windows.Forms.Button();
+            this.BtnSort = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnReadFile
@@ -71,7 +72,7 @@
             // 
             // BtnFilter
             // 
-            this.BtnFilter.Location = new System.Drawing.Point(228, 190);
+            this.BtnFilter.Location = new System.Drawing.Point(230, 90);
             this.BtnFilter.Name = "BtnFilter";
             this.BtnFilter.Size = new System.Drawing.Size(105, 103);
             this.BtnFilter.TabIndex = 4;
@@ -79,11 +80,22 @@
             this.BtnFilter.UseVisualStyleBackColor = true;
             this.BtnFilter.Click += new System.EventHandler(this.BtnFilter_Click);
             // 
+            // BtnSort
+            // 
+            this.BtnSort.Location = new System.Drawing.Point(242, 318);
+            this.BtnSort.Name = "BtnSort";
+            this.BtnSort.Size = new System.Drawing.Size(75, 23);
+            this.BtnSort.TabIndex = 5;
+            this.BtnSort.Text = "Sort ";
+            this.BtnSort.UseVisualStyleBackColor = true;
+            this.BtnSort.Click += new System.EventHandler(this.BtnSort_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 450);
+            this.ClientSize = new System.Drawing.Size(796, 450);
+            this.Controls.Add(this.BtnSort);
             this.Controls.Add(this.BtnFilter);
             this.Controls.Add(this.LstNotPalindrome);
             this.Controls.Add(this.LstPalindrome);
@@ -102,6 +114,7 @@
         private System.Windows.Forms.ListBox LstPalindrome;
         private System.Windows.Forms.ListBox LstNotPalindrome;
         private System.Windows.Forms.Button BtnFilter;
+        private System.Windows.Forms.Button BtnSort;
     }
 }
 

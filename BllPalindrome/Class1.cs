@@ -32,11 +32,24 @@ namespace BllPalindrome
                 //PalindromeWord.Add(WoordBefCharNoBlank[0]);
 
                 string[] splitted = line.Split(',');
+                
                 cleanedList.Add(splitted[0].Trim());
-
+                
             }
-            return cleanedList; 
-            //return PalindromeWord;
+
+            //List<string> cleanedListNoBracket = new List<string>();
+
+            //foreach (string line in cleanedList)
+            //{
+            //    string lineCopy = line;
+                
+            //    //string[] splittedbracket = line.Remove  ;
+            //    //cleanedListNoBracket.Add(splittedbracket[0].Trim());
+            //}
+
+            return cleanedList;           
         }
+
+        
     }
 }
